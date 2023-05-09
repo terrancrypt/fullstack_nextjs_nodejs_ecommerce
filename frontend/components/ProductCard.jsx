@@ -3,7 +3,7 @@ import React from "react";
 
 const ProductCard = () => {
   return (
-    <Link href="product/1">
+    <Link href="product/1" className="transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer">
       <img className="w-full" src="/product-1.webp" alt="Product Image" />
       <div className="p-4 text-black/[0.9]">
         <h2>Product Name</h2>
@@ -12,6 +12,7 @@ const ProductCard = () => {
             <p className="text-base font-medium line-through">
                 $25.00
             </p>
+            <p className="ml-auto text-base font-medium text-green-500">20% Off</p>
         </div>
       </div>
     </Link>
